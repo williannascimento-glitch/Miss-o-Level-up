@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Up Map - Missao Semestral</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animacao.css">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <div class="faixa-roxa">
+    <button class="playcard" id="playcard-original">
+      Level Up
+    </button>
+  </div>
+
+  <div class="conteudo-principal">
+  <div class="conteudo-principal">
+
+    <div class="mapa">
+      <div class="ilha verde" id="grasslands">
+        <h3>Fase 1: CSS - O Estilo</h3>
+        <a href="#" class="botao" onclick="abrirModal('modal-fase1')">Fase 1</a>
+      </div>
+
+      <div class="ilha marrom" id="piggy">
+        <h3>Fase 2: HTML - A Estrutura</h3>
+        <a href="#" class="botao" onclick="abrirModal('modal-fase2')">Fase 2</a>
+      </div>
+
+      <div class="ilha azul" id="snow">
+        <h3>Fase 3: Documentação CSS</h3>
+        <a href="#" class="botao" onclick="abrirModal('modal-fase3')">Fase 3</a>
+      </div>
+
+
+      <div class="ilha verde-claro" id="tower">
+        <h3>Fase 4: Documentação HTML</h3>
+        <a href="#" class="botao" onclick="abrirModal('modal-fase4')">Fase 4</a>
+      </div>
+
+     
+      <div class="caminho" id="c1"></div>
+      <div class="caminho" id="c2"></div>
+      <div class="caminho" id="c3"></div>
+      <div class="caminho" id="c4"></div>
+    </div>
+
+  </div>
+
+  <div class="modal-overlay" id="modal-fase1">
+    <div class="modal-conteudo">
+      <button class="fechar-modal" onclick="fecharModal('modal-fase1')">X</button>
+      <div class="modal-scroll-content">
+        <h1>Fase 1: O que é CSS?</h1>
+
+        <p>O CSS (Cascading Style Sheets) ou Folhas de Estilo em Cascata, é a linguagem que utilizamos para estilizar os elementos de uma página web. Enquanto o HTML cuida da estrutura e do conteúdo (o que vai na página: textos, imagens, links), o CSS cuida da aparência (como esses elementos serão exibidos: cores, fontes, tamanhos, posicionamento, animações).</p>
+
+        <p>Em resumo, o CSS é o que torna o seu site bonito e agradável de navegar. É ele que define a cor de fundo, o tipo de letra, o espaçamento entre os parágrafos e a disposição dos elementos na tela.</p>
+
+        <h2>Vídeo Explicativo: CSS para Iniciantes</h2>
+        <div class="video-container">
+        
+          <iframe src="https://www.youtube.com/embed/Ejkb_YISCK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="explicacao-codigo">
+          <h2>Documentação do CSS do Site</h2>
+          <p>Para a documentação completa do CSS, clique na **Fase 3** (Explicação do CSS) no mapa!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-fase2">
+    <div class="modal-conteudo">
+      <button class="fechar-modal" onclick="fecharModal('modal-fase2')">X</button>
+      <div class="modal-scroll-content">
+        <h1>Fase 2: O que é HTML?</h1>
+
+        <p>O HTML ou Linguagem de Marcação de Hipertexto, é a espinha dorsal de qualquer página web. Ele é usado para estruturar o conteúdo, definindo o que é um título, um parágrafo, uma imagem, um link, uma lista, etc.</p>
+
+        <p>Pense no HTML como o **esqueleto** da sua página. Sem ele, você teria apenas um monte de texto sem formatação. O HTML usa "tags" (etiquetas) para envolver o conteúdo e dar a ele um significado estrutural. Por exemplo, a tag `<h1>` define um título principal, e a tag `<p>` define um parágrafo.</p>
+
+        <h2>Vídeo Explicativo: HTML para Iniciantes</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="explicacao-codigo">
+          <h2>Documentação do HTML do Site</h2>
+          <p>Para a documentação completa do HTML, clique na **Fase 4** (Explicação do HTML) no mapa!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-fase3">
+    <div class="modal-conteudo modal-conteudo-grande">
+      <button class="fechar-modal" onclick="fecharModal('modal-fase3')">X</button>
+      <div class="modal-scroll-content">
+        <h1>Fase 3: Documentação Detalhada do CSS</h1>
+
+        <p>Nesta fase, você encontrará a explicação completa de cada parte dos seus arquivos de estilo (`style.css` e `animacao.css`). Entender o CSS é crucial para personalizar e animar suas páginas!</p>
+
+        <h2>Análise do Arquivo <code>style.css</code></h2>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-fase4">
+    <div class="modal-conteudo modal-conteudo-grande">
+      <button class="fechar-modal" onclick="fecharModal('modal-fase4')">X</button>
+      <div class="modal-scroll-content">
+        <h1>Fase 4: Documentação Detalhada do HTML</h1>
+
+        <p>Nesta fase, você encontrará a explicação completa de cada parte do seu arquivo principal (`index.html`). Entender a estrutura HTML é o primeiro passo para o desenvolvimento web!</p>
+
+        <h2>Arquivo <code>index.html</code></h2>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="arco-overlay" id="arco-overlay">
+    <div class="arco-conteudo">
+      <button class="fechar-arco" onclick="fecharArco()"></button>
+
+      <div class="player-card">
+        <div class="header">
+          <h1>PLAYER_CARD</h1>
+          <p>MISSAO_SEMESTRAL: LEVEL UP!</p>
+        </div>
+        <div class="content">
+          <div class="avatar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZe80FMMLm6DPMuIE02nzw2cW98b5uXpu2vYTGaDUy1w&s=10" alt="Player" class="avatar-img">
+          </div>
+          <div class="info">
+            <p><strong>NOME:</strong> WILLIAN</p>
+            <p><strong>CLASSE:</strong> Full Stack</p>
+            <p><strong>XP:</strong> 125 / 300</p>
+            <div class="xp-bar">
+              <div class="xp-progress xp-40"></div>
+            </div>
+            <div class="achievements">
+              <p1>🏆</p1>
+              <p2>🏅</p2>
+              <p3>⛤</p3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const playcardOriginal = document.getElementById('playcard-original');
+    const arcoOverlay = document.getElementById('arco-overlay'); // Modal do Player Card
+
+    function abrirArco() {
+      arcoOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function fecharArco() {
+      arcoOverlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+  
+    function abrirModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function fecharModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    playcardOriginal.addEventListener('click', abrirArco);
+
+    arcoOverlay.addEventListener('click', function(event) {
+      if (event.target === arcoOverlay) {
+        fecharArco();
+      }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        fecharArco();
+        fecharModal('modal-fase1');
+        fecharModal('modal-fase2');
+        fecharModal('modal-fase3');
+        fecharModal('modal-fase4');
+      }
+    });
+
+    // Fechar os modais de fase clicando no overlay
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', function(event) {
+        if (event.target === overlay) {
+          fecharModal(overlay.id);
+        }
+      });
+    });
+
+  </script>
+
+</body>
+                                                                                                                                                                                              </html>
