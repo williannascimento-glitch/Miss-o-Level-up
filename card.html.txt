@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <div class="player-card">
+        <div class="header">
+          <h1>PLAYER_CARD</h1>
+          <p>MISSÃO_SEMESTRAL: LEVEL UP!</p>
+        </div>
+        <div class="content">
+          <div class="avatar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZe80FMMLm6DPMuIE02nzw2cW98b5uXpu2vYTGaDUy1w&s=10" alt="Player" class="avatar">
+          </div>
+          <div class="info">
+            <p><strong>NOME:</strong> WILLIAN</p>
+            <p><strong>CLASSE:</strong> Full Stack</p>
+            <p><strong>XP:</strong> 125 / 300</p>
+            <div class="xp-bar">
+              <div class="xp-progress" style="width: 40%"></div>
+            </div>
+            <div class="achievements">
+                <p1>🏆.</p1>
+                <p2>🏅.</p2>
+                <p3>⛤.</p3>
+            </div>
+          </div>
+</body>
+</html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Level Up!</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa_Interativo - IFRN</title>
+  <style>
+    body {
+      margin: 0;
+      background: #6dc4ff;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .mapa {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: repeating-linear-gradient(#6dc4ff, #6dc4ff 20px, #65b9f8 20px, #65b9f8 40px);
+    }
+
+    /* Ilhas */
+    .ilha {
+      position: absolute;
+      background: #ffb347;
+      border: 3px solid #222;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 5px #222;
+    }
+
+    .ilha h2 {
+      text-align: center;
+      font-size: 1.2em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    /* Botões */
+    .fase-btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      border: 2px solid #222;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .fase-btn:hover {
+      background: #ffcc00;
+      transform: scale(1.1);
+    }
+
+    /* Posições das ilhas */
+    #grasslands {
+      top: 65%;
+      left: 10%;
+      background: #00cc44;
+    }
+
+    #piggy-mountain {
+      top: 20%;
+      left: 25%;
+      background: #f5d39a;
+    }
+
+    #towering-perch {
+      top: 20%;
+      right: 10%;
+      background: #8cd17d;
+    }
+
+    #slingshot-heights {
+      top: 55%;
+      left: 45%;
+      background: #ff9966;
+    }
+
+    #snowcapped-peaks {
+      bottom: 10%;
+      right: 15%;
+      background: #cde6f7;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="mapa">
+    <!-- Grasslands -->
+    <div class="ilha" id="grasslands">
+      <h2>Grasslands</h2>
+      <a href="grasslands.html" class="fase-btn">Entrar</a>
+    </div>
+
+    <!-- Piggy Mountain -->
+    <div class="ilha" id="piggy-mountain">
+      <h2>Piggy Mountain</h2>
+      <a href="piggy-mountain.html" class="fase-btn">Entrar</a>
+    </div>
+
+    <!-- Towering Perch -->
+    <div class="ilha" id="towering-perch">
+      <h2>Towering Perch</h2>
+      <a href="towering-perch.html" class="fase-btn">Entrar</a>
+    </div>
+
+    <!-- Slingshot Heights -->
+    <div class="ilha" id="slingshot-heights">
+      <h2>Slingshot Heights</h2>
+      <a href="slingshot-heights.html" class="fase-btn">Entrar</a>
+    </div>
+
+    <!-- Snowcapped Peaks -->
+    <div class="ilha" id="snowcapped-peaks">
+      <h2>Snowcapped Peaks</h2>
+      <a href="snowcapped-peaks.html" class="fase-btn">Entrar</a>
+    </div>
+
+  </div>
+</body>
+</html>
